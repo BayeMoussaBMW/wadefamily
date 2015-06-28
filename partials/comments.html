@@ -1,0 +1,27 @@
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<center><a href="#/">Accueil</a></center>
+
+<br><br>
+
+<div>{{title}}</div>
+
+   <div ng-repeat="comment in comments | filter:query | orderBy:order">
+   <strong>
+   	<div class="iidd">
+   	<p>{{comment.id}}</p>
+   </div>
+
+   	<div class="user">
+   <p><a href="#">{{comment.username}}</a></p>
+   </strong>
+   </div>
+
+   <div class="conten">
+   {{comment.content}}
+   </div>
+   
+   </div>
+ 
+</div>

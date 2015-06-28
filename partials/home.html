@@ -1,0 +1,17 @@
+<h><a href="#/home">Accueil</a></h>
+<div ng-repeat="post in posts">
+
+	<h1>{{post.id}}</h1>
+
+	<h2>{{post.username}}</h2>
+
+	<p>{{post.content}}</p>
+
+	<p><a href="#/comments/{{post.id}}">{{post.comments.length}} Afficher les Commentaires de {{post.username}}</a></p>
+
+
+
+</div>
+
+
+
